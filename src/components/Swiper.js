@@ -99,7 +99,7 @@ const Swipers = ({ activeCategory, title }) => {
                             <div className="relative">
                                 <img
                                     src={imageSource}
-                                    alt={`Slider Image ${index + 1}`}
+                                    alt={`${index + 1}`}
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50" />
                             </div>
