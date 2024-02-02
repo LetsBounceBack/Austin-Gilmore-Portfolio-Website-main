@@ -59,13 +59,15 @@ const categories = [
         title: 'National Enquirer Redesign',
         type: 'UI/UX Design',
         img: NationalEnquirer,
-        link: '/NationalEnquirer'
+        link: '/NationalEnquirer',
+        about: 'Redesign of the National Enquirer app.',
       },
       {
         title: 'Tradely',
         type: 'UI/UX Design',
         img: Tradely,
-        link: '/'
+        link: '/',
+        about: 'A fintech social media application for shareholders.',
       },
 
     ],
@@ -79,25 +81,29 @@ const categories = [
         title: 'Integrated Physics and Chemistry',
         type: 'Web Dev',
         img: IPC,
-        link: 'https://curriculumtesting.blob.core.windows.net/files/Austin/Web/IPC.html'
+        link: 'https://curriculumtesting.blob.core.windows.net/files/Austin/Web/IPC.html',
+        about: 'Transformed PDFs/paper copies into responsive websites.',
       },
       {
         title: 'Biology 2nd Edition',
         type: 'Web Dev',
         img: BIO,
-        link: 'https://curriculumtesting.blob.core.windows.net/files/Austin/Web/BIO.html'
+        link: 'https://curriculumtesting.blob.core.windows.net/files/Austin/Web/BIO.html',
+        about: 'Transformed PDFs/paper copies into responsive websites.',
       },
       {
         title: '5th Grade Science 2nd Edition',
         type: 'Web Dev',
         img: SCI,
-        link: 'https://curriculumtesting.blob.core.windows.net/files/Austin/Web/SCI.html'
+        link: 'https://curriculumtesting.blob.core.windows.net/files/Austin/Web/SCI.html',
+        about: 'Transformed PDFs/paper copies into responsive websites.',
       },
       {
         title: 'The Retail Chronicle',
         type: 'Web Dev',
         img: TRC,
-        link: 'https://theretailchronicle.com/'
+        link: 'https://theretailchronicle.com/',
+        about: 'Created with WordPress: an investment news blog.',
       },
     ],
   },
