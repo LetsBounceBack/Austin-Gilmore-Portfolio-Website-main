@@ -256,7 +256,7 @@ const BasicModal = (props) => {
             position: 'relative',
             bgcolor: '#1C2E3F', p: 2,
             height: { xs: "auto", sm: "auto", md: "auto" },
-            width: { xs: "43.2vh", sm: "60vw", md: "70vw" },
+            width: { xs: "95vw", sm: "60vw", md: "70vw" },
             borderRadius: 4,
             boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
           }}>
@@ -275,12 +275,12 @@ const BasicModal = (props) => {
             <Typography align="center" id="modal-modal-title" variant="h6" component="h2" color="#fafafa">
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 {props.title}
-                <button
+                {/* <button
                   onClick={() => window.open(props.link, "_blank", "noopener noreferrer")}
-                  style={{ display: 'flex', alignItems: 'center', cursor: 'pointer', marginLeft: '8px' }}
+                  style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}
                 >
                   <OpenInNew className='mr-1 hover:text-secondary' />
-                </button>
+                </button> */}
               </div>
             </Typography>
 
