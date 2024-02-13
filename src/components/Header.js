@@ -43,17 +43,17 @@ const Header = () => {
     if (location.pathname !== '/') {
       navigate('/');
       setTimeout(() => {
-        document.getElementById(to).scrollIntoView({ behavior: 'smooth' });
+        document.getElementById(to).scrollIntoView({ behavior: 'smooth', block: 'start' });
       }, 500);
     } else {
-      document.getElementById(to).scrollIntoView({ behavior: 'smooth' });
+      document.getElementById(to).scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
     setIsOpen(false);
   };
 
 
   return (
-    <div className={`shadow-md anim_gradient sticky py-3 ${scrollDirection === "down" ? "-top-24" : "top-0"} transition-all duration-500 z-50 `} >
+    <div className={`shadow-md anim_gradient sticky py-3 ${scrollDirection === "down" && !isOpen ? "-top-24" : "top-0"} transition-all duration-500 z-50 `} >
 
       <div className='md:px-40 px-8 md:flex justify-between items-center '>
         {/* LOGO */}
