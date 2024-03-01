@@ -52,7 +52,7 @@ const categories = [
   },
   {
     name: 'UX/UI',
-    Redirect: 'Case Study',
+    Redirect: 'View',
     icon: < DesignServices />,
     projects: [
       {
@@ -66,7 +66,7 @@ const categories = [
         title: 'Tradely',
         type: 'UI/UX Design',
         img: Tradely,
-        link: '/',
+        link: 'https://www.tradely.social/',
         about: 'A fintech social media application for shareholders.',
       },
 
