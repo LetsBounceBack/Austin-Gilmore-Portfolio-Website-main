@@ -36,7 +36,7 @@ const About = () => {
             viewport={{ once: true, amount: 0.3 }}
             className='flex-1'>
             <h2 className='h2 font-bold'>About Me:</h2>
-            <h4 className='h4 mb-4'>Interactive/Web Developer at Responsive Ed. First-gen Chinese immigrant, <span className='font-extrabold text-secondary'>self-taught</span> in Web Dev, Game Dev, Music Production, Graphics Design, and Digital Marketing.</h4>
+            <h4 className='h4 mb-4'>Web Developer at UT Arlington Libraries. First-gen Chinese immigrant, <span className='font-extrabold text-secondary'>self-taught</span> in Web Dev, Game Dev, Music Production, Graphics Design, and Digital Marketing.</h4>
             <h4 className='h4 mb-4'>My mantra is to <span className='font-extrabold text-secondary'>never stop learning</span>. I believe that If you are passionate and interested in a subject, you can learn it.</h4>
             <h4 className='h4 mb-4'>Outside of work, I'm an avid <span className='font-extrabold text-secondary'>gamer</span>, nature enthusiast, <span className='font-extrabold text-secondary'>entrepreneur</span>, and I enjoy experimenting with new recipes in the kitchen! 👨‍🍳</h4>
             <p className='mb-4'>Tools and knowledge:</p>
