@@ -105,16 +105,6 @@ const Banner = () => {
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
               <a
-                href="https://github.com/LetsBounceBack"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGithub
-                  className="text-2xl hover:text-[#6e5494]"
-                  title="Github"
-                />
-              </a>
-              <a
                 href="https://www.linkedin.com/in/theaustingilmore/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -132,6 +122,16 @@ const Banner = () => {
                 <FaXTwitter
                   className="text-2xl hover:text-[#657786]"
                   title="X(Twitter)"
+                />
+              </a>
+              <a
+                href="https://github.com/LetsBounceBack"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub
+                  className="text-2xl hover:text-[#6e5494]"
+                  title="Github"
                 />
               </a>
             </motion.div>

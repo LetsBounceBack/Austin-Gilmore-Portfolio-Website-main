@@ -52,12 +52,13 @@ const About = () => {
               graphic design, music production, and digital marketing.
             </h4>
             <h4 className="h4 mb-4">
-              My mantra is to{" "}
+              Curiosity drives me. My mantra is to{" "}
               <span className="font-extrabold text-secondary">
                 never stop learning
               </span>
               . I believe that If you are passionate and interested in a
-              subject, you can learn it.
+              subject, you can learn it. I constantly expand my skills to gain
+              knowledge and deliver better, more innovative results.
             </h4>
             <h4 className="h4 mb-4">
               Outside of work, I'm an avid{" "}
