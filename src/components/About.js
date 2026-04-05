@@ -56,18 +56,18 @@ const About = () => {
               <span className="font-extrabold text-secondary">
                 never stop learning
               </span>
-              . I believe that If you are passionate and interested in a
+              . I believe that if you are passionate and interested in a
               subject, you can learn it. I constantly expand my skills to gain
               knowledge and deliver better, more innovative results.
             </h4>
             <h4 className="h4 mb-4">
               Outside of work, I'm an avid{" "}
               <span className="font-extrabold text-secondary">gamer</span>,
-              nature enthusiast,{" "}
+              nature enthusiast, and{" "}
               <span className="font-extrabold text-secondary">
                 entrepreneur
               </span>
-              , and I enjoy experimenting with new recipes in the kitchen! 👨‍🍳
+              . I also love experimenting with new recipes in the kitchen! 👨‍🍳
             </h4>
             <p className="mb-4">Tools and knowledge:</p>
             <div className="flex flex-wrap items-centercursor-pointer">
