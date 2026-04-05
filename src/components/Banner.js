@@ -2,7 +2,7 @@ import React from "react";
 //images
 import Image from "../assets/avatar.png";
 //icons
-import { FaGithub, FaYoutube } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 //type animation
 import { TypeAnimation } from "react-type-animation";
@@ -22,7 +22,7 @@ const Banner = () => {
             whileInView={"show"}
             viewport={{ once: true, amount: 0.5 }}
             exit={{ opacity: 0 }}
-            className="hidden lg:flex mx-auto mb-8 lg:mb-0 lg:mr-5 mix-blend-lighten bg-top"
+            className="hidden lg:flex mx-auto mb-8 lg:mb-0 lg:mr-5 bg-top"
           >
             <img src={Image} alt="" className="mr-8" />
           </motion.div>
@@ -115,13 +115,13 @@ const Banner = () => {
                 />
               </a>
               <a
-                href="https://www.youtube.com/@ProdBySour/"
+                href="https://www.linkedin.com/in/theaustingilmore/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaYoutube
-                  className="text-2xl hover:text-[#FF0000]"
-                  title="Youtube"
+                <FaLinkedin
+                  className="text-2xl hover:text-[#0A66C2]"
+                  title="LinkedIn"
                 />
               </a>
               <a

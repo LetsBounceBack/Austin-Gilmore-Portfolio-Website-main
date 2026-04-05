@@ -254,115 +254,100 @@ const Work = () => {
 };
 
 const BasicModal = ({ project, handleClose, activeCategory }) => {
-  const handleModalClick = (event) => {
-    if (event.target.className === "modal-backdrop") {
-      handleClose();
-    }
-  };
-
   return (
     <Modal
       open={Boolean(project)}
       onClose={handleClose}
       aria-labelledby="modal-title"
+      // BackdropProps helps handle the blur/fade,
+      // but we need to ensure the Modal itself allows scrolling
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        p: 2, // Padding so the modal doesn't touch screen edges
+      }}
     >
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100vh",
+      <Box
+        sx={{
+          position: "relative",
+          bgcolor: "#1C2E3F",
+          p: 3,
+          width: { xs: "95vw", sm: "70vw" },
+          maxWidth: "800px", // Good practice for large screens
+          maxHeight: "90vh", // Limits height to 90% of the screen
+          overflowY: "auto", // Enables vertical scrolling
+          borderRadius: 4,
+          outline: "none",
+          boxShadow: 24,
         }}
-        className="modal-backdrop"
-        onClick={handleModalClick}
       >
-        <Box
-          sx={{
-            position: "relative",
-            bgcolor: "#1C2E3F",
-            p: 3,
-            width: { xs: "90vw", sm: "70vw" },
-            borderRadius: 4,
-            outline: "none",
+        <button
+          onClick={handleClose}
+          aria-label="Close modal"
+          style={{
+            position: "sticky", // Changed to sticky so it stays visible while scrolling
+            float: "right",
+            top: "0",
+            right: "0",
+            background: "none",
+            border: "none",
+            color: "#fafafa",
+            cursor: "pointer",
+            zIndex: 10,
           }}
         >
-          <button
-            onClick={handleClose}
-            aria-label="Close modal" // Essential for accessibility
-            style={{
-              position: "absolute",
-              right: "10px",
-              top: "10px",
-              background: "none",
-              border: "none", // Remove default button border
-              color: "#fafafa",
-              cursor: "pointer",
-              zIndex: 10,
-            }}
-          >
-            <Close />
-          </button>
+          <Close />
+        </button>
 
-          {/* Title with Inline Link */}
-          <Typography
-            id="modal-title"
-            variant="h5"
-            component="h2"
-            color="#fafafa"
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              gap: 2, // Space between title and link
-              mb: 2,
-            }}
-          >
-            <span
+        {/* Title with Inline Link */}
+        <Typography
+          id="modal-title"
+          variant="h5"
+          component="h2"
+          color="#fafafa"
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", sm: "row" }, // Stack on mobile
+            alignItems: "center",
+            justifyContent: "center",
+            gap: 2,
+            mb: 2,
+            textAlign: "center",
+          }}
+        >
+          <span>{project.title}</span>
+
+          {project.link && (
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
-                overflow: "hidden",
-                textOverflow: "ellipsis",
-                whiteSpace: "nowrap",
+                display: "flex",
+                alignItems: "center",
+                gap: "4px",
+                fontSize: "0.9rem",
+                color: "#87CEEB",
+                textDecoration: "none",
+                padding: "4px 12px",
+                border: "1px solid #87CEEB",
+                borderRadius: "20px",
               }}
+              className="hover:bg-[#87CEEB20]"
             >
-              {project.title}
-            </span>
+              View <OpenInNew style={{ fontSize: "1rem" }} />
+            </a>
+          )}
+        </Typography>
 
-            {/* Link Icon: Only shows if project.link exists */}
-            {project.link && (
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "4px",
-                  fontSize: "0.9rem", // Slightly smaller than title
-                  color: "#87CEEB", // Your light blue accent
-                  textDecoration: "none",
-                  padding: "4px 12px",
-                  border: "1px solid #87CEEB",
-                  borderRadius: "20px",
-                  transition: "all 0.3s ease",
-                }}
-                className="hover:bg-[#87CEEB20]" // Subtle glow on hover
-              >
-                View <OpenInNew style={{ fontSize: "1rem" }} />
-              </a>
-            )}
-          </Typography>
+        <Typography align="center" color="#fafafa" sx={{ mb: 3, opacity: 0.8 }}>
+          {project.about}
+        </Typography>
 
-          <Typography
-            align="center"
-            color="#fafafa"
-            sx={{ mb: 3, opacity: 0.8 }}
-          >
-            {project.about}
-          </Typography>
-
-          <Swipers activeCategory={activeCategory} title={project.title} />
-        </Box>
-      </div>
+        {/* This is likely what was causing the height issues */}
+        <Swipers activeCategory={activeCategory} title={project.title} />
+      </Box>
     </Modal>
   );
 };

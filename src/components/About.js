@@ -33,7 +33,7 @@ const About = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.1 }}
-            className="flex-1 bg-about bg-container bg-no-repeat mt-10 h-[440px] mix-blend-lighten bg-top"
+            className="flex-1 bg-about bg-container bg-no-repeat mt-10 h-[440px] bg-top"
           ></motion.div>
           {/* text */}
           <motion.div
@@ -75,10 +75,7 @@ const About = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaDrupal
-                  className="mr-3 text-4xl mb-4 hover:text-[#21759b]"
-                  title="Drupal"
-                />
+                <FaDrupal className="mr-3 text-4xl mb-4" title="Drupal" />
               </a>
               <a
                 href="https://html.com/html5/"
