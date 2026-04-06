@@ -41,6 +41,7 @@ const Experience = () => {
           variants={fadeIn("up", 0.1)}
           initial="hidden"
           whileInView={"show"}
+          viewport={{ once: true, amount: 0.1 }}
           className="flex-1 border-b border-white/20 pb-12 mb-12"
         >
           <h2 className="h2 font-bold">Experience</h2>

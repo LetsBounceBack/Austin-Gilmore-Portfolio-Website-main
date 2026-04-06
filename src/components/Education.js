@@ -24,6 +24,7 @@ const Education = () => {
           variants={fadeIn("up", 0.1)}
           initial="hidden"
           whileInView={"show"}
+          viewport={{ once: true, amount: 0.1 }}
           className="flex-1"
         >
           <h2 className="h2 font-bold">Education</h2>
