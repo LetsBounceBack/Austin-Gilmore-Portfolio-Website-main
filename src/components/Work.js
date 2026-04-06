@@ -130,7 +130,10 @@ const Work = () => {
   };
 
   return (
-    <section className="section lg:mb-10 mt-20" id="work">
+    <section
+      className="section lg:mb-10 mt-20 scroll-mt-96 lg:scroll-mt-60"
+      id="work"
+    >
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-10 lg:items-center lg:gap-x-20 lg:gap-y-0">
           {/* Tab navigation */}

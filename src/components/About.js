@@ -20,11 +20,16 @@ import { fadeIn } from "../variants";
 
 const About = () => {
   // inView
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 1024;
   const [ref] = useInView({
     threshold: 0.5,
   });
   return (
-    <section className="section" id="about" ref={ref}>
+    <section
+      className="section scroll-mt-96 lg:scroll-mt-0"
+      id="about"
+      ref={ref}
+    >
       <div className="container mx-auto ">
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0">
           {/* img */}
@@ -37,7 +42,7 @@ const About = () => {
           ></motion.div>
           {/* text */}
           <motion.div
-            variants={fadeIn("left", 0.1)}
+            variants={fadeIn(isMobile ? "up" : "left", 0.1)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.1 }}

@@ -35,7 +35,7 @@ const Experience = () => {
   ];
 
   return (
-    <section className="pt-14" id="experience">
+    <section className="pt-14 scroll-mt-96 lg:scroll-mt-0" id="experience">
       <div className="container mx-auto">
         <motion.div
           variants={fadeIn("up", 0.1)}

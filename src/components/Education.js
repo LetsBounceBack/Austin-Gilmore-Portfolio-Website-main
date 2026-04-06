@@ -18,7 +18,7 @@ const Education = () => {
   ];
 
   return (
-    <section className="pt-8 pb-20" id="education">
+    <section className="pt-8 pb-20 scroll-mt-96 lg:scroll-mt-0" id="education">
       <div className="container mx-auto">
         <motion.div
           variants={fadeIn("up", 0.1)}

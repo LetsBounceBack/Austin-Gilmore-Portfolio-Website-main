@@ -64,7 +64,7 @@ const Header = () => {
     <div
       className={`shadow-md anim_gradient sticky py-3 ${scrollDirection === "down" && !isOpen ? "-top-24" : "top-0"} transition-all duration-500 z-50 `}
     >
-      <div className="md:px-40 px-8 md:flex justify-between items-center ">
+      <div className="[@media(min-width:1440px)]:px-40 px-8 md:flex justify-between items-center ">
         {/* LOGO */}
         <div>
           <a href="/">

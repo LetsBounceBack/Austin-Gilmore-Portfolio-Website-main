@@ -36,7 +36,8 @@ const Banner = () => {
               exit={{ opacity: 0 }}
               className="text-[40px] font-bold leading-[0.8] lg:text-[60px] "
             >
-              Austin <span>Gilmore</span>
+              Austin{" "}
+              <span class="lg:leading-[80px] xl:leading-[0]">Gilmore</span>
             </motion.h1>
             <motion.div
               variants={fadeIn("up", 0.4)}
